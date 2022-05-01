@@ -1,0 +1,89 @@
+// Products Colors 
+$Grullo:#B6A38C;
+$royalBrown: #50412D;
+$indigo: #283D64;
+$gainsboro: #DFDBE2;
+$khaki: #C4AA9B;
+$liverChestnut: #583D32;
+$nickel: #737373;
+$philippineSilver:#B2B3B8;
+$silverPink: #C6AFA0;
+$isabelline: #F7F3ED;
+$viridianGreen: #648573;
+$parisWhite: #D0E1D9;
+#rolex-site .products-container {
+    width: 70%;
+    margin: 0 auto;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        .rolex-container-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        div {
+            border-radius: 25px;
+            padding: 20px;
+            color: white;
+        }
+        .rolex-container-item {
+            &:nth-child(1) {
+                background-image: linear-gradient(to right, $Grullo, $royalBrown) !important;
+            }
+            &:nth-child(2) {
+                background-image: linear-gradient(to right, $indigo, $gainsboro) !important;
+            }
+            &:nth-child(3) {
+                background-image: linear-gradient(to right, #C4AA9B, #583D32) !important;
+            }
+            &:nth-child(4) {
+                background-image: linear-gradient(to right, #737373, #b2b3b8);
+            }
+            &:nth-child(5) {
+                background-image: linear-gradient(to right, #C6AFA0, #F7F3ED) !important;
+            }
+            &:nth-child(6) {
+                background-image: linear-gradient(to right, #648573, #D0E1D9) !important;
+            }
+        }
+        div {
+            .rolex-purchase-button {
+                padding: 8px 20px;
+                text-align: center;
+                text-transform: uppercase;
+                transition: 0.5s;
+                color: white;
+                box-shadow: 0 0 20px #eee;
+                border-radius: 25px;
+                border: 2px solid white;
+                background-size: 200% auto;
+                &:hover {
+                    background-position: right center !important;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+            &:nth-child(1) .rolex-purchase-button {
+                background-image: linear-gradient(to right, #B6A38C 0%, #50412D 51%, #B6A38C 100%) !important;
+            }
+            &:nth-child(2) .rolex-purchase-button {
+                background-image: linear-gradient(to right, #283D64 0%, #DFDBE2 51%, #283D64 100%) !important;
+            }
+            &:nth-child(3) .rolex-purchase-button {
+                background-image: linear-gradient(to right, #C4AA9B 0%, #583D32 51%, #C4AA9B 100%) !important;
+            }
+            &:nth-child(4) .rolex-purchase-button {
+                background-image: linear-gradient(to right, #737373 0%, #b2b3b8 51%, #737373 100%) !important;
+            }
+            &:nth-child(5) .rolex-purchase-button {
+                background-image: linear-gradient(to right, #C6AFA0 0%, #F7F3ED 51%, #C6AFA0 100%) !important;
+            }
+            &:nth-child(6) .rolex-purchase-button {
+                background-image: linear-gradient(to right, #648573 0%, #D0E1D9 51%, #648573 100%) !important;
+            }
+        }
+    }
+}

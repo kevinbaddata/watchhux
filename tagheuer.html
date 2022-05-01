@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/sass/style.css">
+    <title>Tag Heuer</title>
+    <style>
+        .logo img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 3em;
+            width: 15%;
+        }
+        
+        .showcase .img-text-1 {
+            position: absolute;
+            right: 0;
+            bottom: -85px;
+        }
+        
+        .showcase .img-text-2 {
+            position: absolute;
+            right: 0;
+            bottom: 12px;
+        }
+        
+        .owl-carousel {
+            margin-top: 200px;
+        }
+        
+        .owl-carousel img {
+            border-radius: 25px;
+        }
+        
+        .owl-carousel img:nth-child(1) {
+            margin-right: 20px;
+        }
+        /*GRID CONTAINER*/
+        
+        @media only screen and (max-width: 667px) {
+            #tagheuer-site .grid-container {
+                /* grid-auto-flow: dense; */
+                grid-template-areas: "a a" "b c" "d d" "e e";
+                grid-gap: 5px;
+                margin-bottom: 100px;
+                border-radius: 25px;
+            }
+            #tagheuer-site .grid-container>img:nth-child(5) {
+                display: none
+            }
+            #tagheuer-site .grid-container>div:nth-child(6) {
+                display: none;
+            }
+            .grid-container img {
+                height: 300px !important;
+            }
+            .logo img {
+                width: 25%;
+                margin-bottom: 20px;
+            }
+            nav ul {
+                display: none;
+                top: 0;
+            }
+            nav {
+                top: -2px;
+            }
+            button:focus+ul {
+                display: block;
+            }
+            .menu-btn-div {
+                text-align: center;
+            }
+            button {
+                margin-bottom: 10px;
+            }
+            nav img {
+                height: 167px;
+            }
+            h1 {
+                font-size: 2em !important;
+            }
+            .img-text-1 {
+                position: absolute;
+                right: 0;
+                bottom: 20px;
+            }
+            .img-text-2 {
+                position: absolute;
+                right: 0;
+                bottom: 20px;
+            }
+            section {
+                margin-top: 0px;
+            }
+            .img-footer-2 {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 10px
+            }
+            .grid-container img {
+                height: 300px
+            }
+            .text {
+                display: none;
+            }
+            .list {
+                background-color: #111111;
+                height: 750px;
+                display: flex;
+            }
+            .list li {
+                display: none;
+            }
+            .list div {
+                margin-top: 53px;
+            }
+            .list p {
+                text-align: center;
+                font-size: 2em;
+                color: #86868B;
+                margin-bottom: 60px;
+            }
+            .list div {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+            #tagheuer-site .products-container .container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .products h2 {
+                text-align: center;
+                font-size: 2em;
+                margin-top: 2em;
+                color: #8c7d7a;
+            }
+            .products-img {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .products-img p {
+                text-align: center;
+                margin-top: -12px;
+                margin-bottom: 13px;
+            }
+        }
+        
+        @media (min-width: 668px) and (max-width: 1024px) {
+            #tagheuer-site .grid-container {
+                /* grid-auto-flow: dense; */
+                grid-template-areas: "a a" "b c" "d e" "f f";
+                grid-gap: 5px;
+                margin-bottom: 100px;
+                border-radius: 25px;
+            }
+            #tagheuer-site .grid-container>div:nth-child(6) {
+                display: none;
+            }
+            .list p {
+                margin-bottom: 10px;
+            }
+            .secondshowcase {
+                margin-bottom: 101px;
+            }
+            .firstshowcase {
+                margin-bottom: 72px;
+            }
+            section {
+                margin-top: 10px !important;
+            }
+            nav ul {
+                justify-content: space-between;
+                list-style-type: none;
+                display: block;
+                display: flex !important;
+            }
+            .products-img {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .img-text-1 {
+                position: absolute;
+                right: 0;
+                bottom: -162px;
+            }
+            .img-text-1 p {
+                text-align: center
+            }
+            .img-text-2 {
+                position: absolute;
+                right: 0;
+                bottom: -79px;
+            }
+            .menu-button {
+                display: none
+            }
+        }
+        
+        @media only screen and (min-width:1025px) {
+            .list p {
+                margin-bottom: 10px;
+            }
+            section {
+                margin-top: 0px !important;
+            }
+            nav ul {
+                justify-content: space-between;
+                list-style-type: none;
+                display: block;
+                display: flex !important;
+            }
+            .products-img {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .img-text-1 {
+                bottom: -16px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- HEADER -->
+    <header id="menu-header">
+        <img src="./assets/img/TAG_HEUER/Header.jpg" alt="Tag Heuer Header" class="site-banner">
+
+        <nav>
+            <div class="menu-btn-div">
+                <button class="menu-button"><span style="color: #8c7d7a;">Meny</span></button>
+            </div>
+            <ul id="menu-ul">
+                <li> <a href="index.html"> Home</a></li>
+                <li class="dropdown">
+                    <ul>
+                        <li>Products</li>
+                        <li class="dropdown-content">
+                            <a href="rolex.html">Rolex</a>
+                            <a href="tagheuer.html">TAG Heuer </a>
+                            <a href="omega.html">Omega</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li> <a href=""><span><i class="fas fa-shopping-cart" id="cart"></i></span></a></li>
+
+            </ul>
+        </nav>
+        <div class="wrapper"><span class="bril"></span><span class="bril"></span><span class="bril"></span></div>
+
+        <div class="slider">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rolex.html">Rolex</a></li>
+                <li><a href="tagheuer.html">Tag Heuer</a></li>
+                <li><a href="omega.html">Omega</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <main id="tagheuer-site">
+        <section class="current-page">
+            <h2 style="display:none">Text</h2>
+
+            <ol>
+                <li>Main / <span style="color:#868e96">Tag Heuer</span></li>
+
+            </ol>
+        </section>
+        <div class="logo">
+            <a href="#logo">
+                <img src="./assets/img/TAG_HEUER/Tag_Heuer-logo.jpg" alt="Tag Heuer Logo" />
+            </a>
+        </div>
+
+        <!-- GRID CONTAINER -->
+        <div class="grid-container">
+            <img src="./assets/img/TAG_HEUER(copy)/Grid-1.png" alt="Grid-Item-1">
+            <img src="./assets/img/TAG_HEUER(copy)/Grid-2.jpg" alt="Grid-Item-2">
+            <img src="./assets/img/TAG_HEUER(copy)/Grid-3.jpg" alt="Grid-Item-3">
+            <img src="./assets/img/TAG_HEUER(copy)/Grid-4.png" alt="Grid-Item-4">
+            <img src="./assets/img/TAG_HEUER(copy)/Grid-5.png" alt="Grid-Item-5">
+
+            <div>
+                <img src="./assets/img/TAG_HEUER(copy)/Grid-6.png" alt="Grid-Item-6">
+                <img id="grid-container-last-img" src="./assets/img/TAG_HEUER(copy)/Grid-7.png" alt="Grid-Item-7">
+            </div>
+        </div>
+        <!-- GRID CONTAINER END -->
+
+        <!-- SHOWCASE START -->
+        <section class="showcase">
+            <h1>Bigger Screen <br> Bigger <br>Oppurtunitites</h1>
+
+            <div class="firstshowcase" style="position: relative;">
+                <img src="./assets/img/TAG_HEUER(copy)/Background.png" alt="Background Image 1">
+
+
+                <div class="img-text-1">
+
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse eos distinctio est tenetur deserunt laborum dignissimos aut non itaque possimus commodi eveniet, quae dolore, sit ipsa impedit? Consectetur, sint quam?</p>
+                </div>
+            </div>
+
+
+            <div class="secondshowcase" style="position:relative">
+
+                <img style="height: 100%;" src="./assets/img/TAG_HEUER(copy)/Background_2.png" alt="Background Image 2">
+
+                <div class="img-text-2">
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse eos distinctio est tenetur deserunt laborum dignissimos aut non itaque possimus commodi eveniet, quae dolore, sit ipsa impedit? Consectetur, sint quam?</p>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+        <section>
+
+            <div class="list">
+                <div>
+                    <h1 style="text-align: center; color:white">Watch</h1>
+                    <p style="opacity: 0.25;">Lorem Lorem, Lorem Lorem Lorem Lorem.
+                    </p>
+                    <div class="hr"></div>
+                    <p style="opacity: 0.50;">Lorem Lorem, Lorem Lorem Lorem Lorem.
+                    </p>
+                    <div class="hr"></div>
+                    <p style="opacity: 0.75;">Lorem Lorem, Lorem Lorem Lorem Lorem.
+                    </p>
+                    <div class="hr"></div>
+                    <p style="opacity: 1;">Lorem Lorem, Lorem Lorem Lorem Lorem.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section style="display: flex; justify-content: center;">
+            <h2 style="display:none">Text</h2>
+
+            <img src="./assets/img/TAG_HEUER(copy)/Rand.png" alt="Background Image 3" style="width: 100%;">
+        </section>
+
+        <!-- PRODUCTS START -->
+        <section class="products-container">
+            <h2 style="display:none">Text</h2>
+
+            <div class="container">
+                <div>
+                    <img src="./assets/img/TAG_HEUER(copy)/Product-1.png" alt="First Product">
+                    <p>Omega Watch XxX</p>
+                    <p>10$</p>
+                    <div class="btn">
+
+                        <div class="tagheuer-purchase-button">Buy</div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/img/TAG_HEUER(copy)/Product-2.png" alt="Second Product">
+                    <p>Omega Watch XxX</p>
+                    <p>10$</p>
+                    <div class="btn">
+
+                        <div class="tagheuer-purchase-button">Buy</div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/img/TAG_HEUER(copy)/Product-3.png" alt="Third Product">
+                    <p>Omega Watch XxX</p>
+                    <p>10$</p>
+                    <div class="btn">
+
+                        <div class="tagheuer-purchase-button">Buy</div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/img/TAG_HEUER(copy)/Product-3.png" alt="Fourth Product">
+                    <p>Omega Watch XxX</p>
+                    <p>10$</p>
+                    <div class="btn">
+
+                        <div class="tagheuer-purchase-button">Buy</div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/img/TAG_HEUER(copy)/Product-2.png" alt="Fifth Product">
+                    <p>Omega Watch XxX</p>
+                    <p>10$</p>
+                    <div class="btn">
+
+                        <div class="tagheuer-purchase-button">Buy</div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/img/TAG_HEUER(copy)/Product-2.png" alt="Sixth Product">
+                    <p>Omega Watch XxX</p>
+                    <p>10$</p>
+                    <div class="btn">
+
+                        <div class="tagheuer-purchase-button">Buy</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- PRODUCTS END -->
+
+    </main>
+
+
+    <!-- FOOTER START -->
+    <footer>
+        <br>
+        <hr>
+        <div class="footer-head">
+            <span>  <img src="./assets/img/TAG_HEUER/Tag_Heuer-logo.jpg" alt="Tag Heuer Logo" width="85" height="75" /></span>
+            <span><i class="fas fa-arrow-right"></i></span>
+            <span>Tag Heuer</span>
+        </div>
+        <hr>
+
+
+        <div class="footer-menu">
+            <ul>
+                <li>Text <span>+</span>
+                    <ul>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>Text <span>+</span>
+
+                    <ul>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>Text <span>+</span>
+                    <ul>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                    </ul>
+
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>Text <span>+</span>
+                    <ul>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </footer>
+    <!-- FOOTER END -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function() {
+            $("#tagheuer-site .owl-carousel").owlCarousel({
+                margin: 50,
+                autoplay: true,
+                lazyLoad: true,
+                rewind: true,
+                responsiveClass: true,
+                autoHeight: true,
+                dots: false,
+                slideSpeed: 300,
+                paginationSpeed: 500,
+                mouseDrag: true,
+                autoplayTimeout: 2000,
+                responsive: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: false
+                    }
+                }
+
+            });
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.wrapper').on('click', function() {
+
+            if (!$('span').hasClass("grill")) {
+                $('span').addClass('grill');
+                $('h1').show();
+                $('.slider').addClass('showslide');
+            } else {
+                $('span').removeClass('grill');
+                $('h1').hide();
+                $('.slider').removeClass('showslide');
+            }
+        });
+    </script>
+</body>
+
+</html>

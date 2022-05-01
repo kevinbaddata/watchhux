@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/sass/style.css">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        #strap-site #left-changer {
+            display: none;
+        }
+        
+        #strap-site #right-changer {
+            display: none;
+        }
+        
+        .strap-body {
+            background-color: #F1F1F1;
+        }
+        
+        .logo {
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        
+        .logo img {
+            width: 9%;
+        }
+        
+        #strap-site #main-watch {
+            width: 288px !important;
+            border-radius: 0;
+            background-color: transparent !important;
+        }
+        
+        input {
+            height: 30px;
+            width: 30px
+        }
+        
+        .watch-data {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: -6em;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .watch-data div {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .add-to-cart {
+            margin-top: 8px;
+            padding: 10px;
+            width: 128px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .add-to-cart:hover {
+            background-color: black;
+            color: white;
+        }
+        
+        @media only screen and (max-width: 667px) {
+            #strap-site #left-changer {
+                display: block;
+            }
+            #strap-site #right-changer {
+                display: block;
+            }
+            .straps {
+                display: grid;
+                grid-template-areas: "a b c" "d d d" "e f g";
+                background-color: #f1f1f1;
+            }
+            .container .straps .item:nth-child(1) {
+                display: none;
+            }
+            .container .straps .item:nth-child(2) {
+                display: none;
+            }
+            .container .straps .item:nth-child(5) {
+                display: none;
+            }
+            .container .straps .item:nth-child(6) {
+                display: none;
+            }
+            .container .straps div {
+                margin: 0px;
+            }
+            .container .straps {
+                display: grid;
+                grid-template-areas: "a d g";
+                background-color: #f1f1f1;
+            }
+            #main-watch {
+                width: 208px !important;
+                border-radius: 0;
+                background-color: #f1f1f1;
+            }
+            .logo img {
+                width: 22%;
+            }
+        }
+        
+        @media (min-width: 668px) and (max-width: 1024px) {
+            .straps {
+                display: grid;
+                grid-template-areas: "a b" "d d" "f g";
+                background-color: #f1f1f1;
+            }
+            #strap-site #main-watch {
+                width: 182px !important;
+            }
+            .container .straps .item:nth-child(3) {
+                display: none;
+            }
+            .container .straps .item:nth-child(5) {
+                display: none;
+            }
+            .straps {
+                grid-template-areas: "a b c" "e f g" "d d d";
+                background-color: #f1f1f1;
+            }
+            #main-watch {
+                width: 100% !important
+            }
+        }
+    </style>
+</head>
+
+<body class="strap-body">
+
+    <main id="strap-site">
+        <div class="logo">
+            <a href="omega.html">
+                <img src="./assets/img/Omega/Omega-logo.png" alt="" id="logo">
+            </a>
+        </div>
+        <br>
+        <br>
+        </div>
+
+
+        <section class="container">
+            <h1 style="text-align: center;">Create Your Own Style</h1>
+            <div class="straps">
+                <div class="item">
+                    <img src="./assets/img/Omega-Studio/Strap-1.png" alt="First Strap">
+                    <div class="toggle-1 strap" data-name="Strap-1" data-color="Green" data-price="60" id="strap-1" data-value="./assets/img/Omega-Studio/Watch-1.png"></div>
+                </div>
+
+
+                <div class="item">
+                    <img src="./assets/img/Omega-Studio/Strap-2.png" alt="Second Strap">
+                    <div class="toggle-2 strap" data-name="Strap-2" data-color="Green" data-price="60" id="strap-2" data-value="./assets/img/Omega-Studio/Watch-2.png"></div>
+
+                </div>
+                <div class="item">
+                    <button id="left-changer">Change</button>
+                    <img src="./assets/img/Omega-Studio/Strap-3.png" class="left-strap-mobil" alt="Third Strap">
+                    <div class="toggle-3 strap" data-name="Strap-3" id="left-strap-btn-mobil" data-color="Orange" data-price="63" id="strap-3" data-value="./assets/img/Omega-Studio/Watch-3.png"></div>
+                </div>
+
+
+                <div class="item">
+                    <img src="./assets/img/Omega-Studio//Watch-1.png" alt="Main Watch" id="main-watch" style="width: 160px;">
+                </div>
+
+
+                <div class="item">
+                    <img src="./assets/img/Omega-Studio/Strap-4.png" alt="Fourth Strap">
+                    <div class="toggle-4 strap" data-name="Strap-4" data-color="Green" data-price="60" id="strap-4" data-value="./assets/img/Omega-Studio/Watch-4.png"></div>
+
+                </div>
+                <div class="item">
+                    <img src="./assets/img/Omega-Studio/Strap-5.png" alt="Fifth Strap">
+                    <div class="toggle-5 strap" data-name="Strap-5" data-color="Orange" data-price="65" id="strap-5" data-value="./assets/img/Omega-Studio/Watch-5.png"></div>
+
+                </div>
+                <div class="item">
+                    <button id="right-changer">Change</button>
+                    <img src="./assets/img/Omega-Studio/Strap-6.png" alt="Sixth Strap" id="right-strap-mobil">
+
+                    <div class="toggle-6 strap" data-name="Strap-6" id="right-strap-btn-mobil" data-color="Yellow" data-price="66" id="strap-6" data-value="./assets/img/Omega-Studio/Watch-6.png"></div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+        <div class="watch-data">
+            <div class="data-name">Watch Name</div>
+            <div class="data-color">Description</div>
+            <div class="data-price">Price</div>
+            <button class="add-to-cart">Add to Cart</button>
+
+        </div>
+
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/imagechanger.js"></script>
+
+</body>
+
+
+</html>

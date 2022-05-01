@@ -1,0 +1,60 @@
+#tagheuer-site {
+    .grid-container {
+        display: grid;
+        grid-template-areas: "a a b" "a a c" "d e f ";
+        grid-auto-flow: dense;
+        max-width: 878px;
+        margin: 0 auto;
+        grid-gap: 5px;
+        margin-bottom: 100px;
+        padding: 70px;
+        img {
+            width: 100%;
+            object-fit: cover;
+            @include slowTransition(0.2);
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.1);
+                opacity: 0.9;
+            }
+        }
+        > {
+            img {
+                &:nth-child(1) {
+                    grid-area: a;
+                    height: 400px;
+                    object-fit: cover;
+                    border-radius: 25px 0 0 0;
+                }
+                &:nth-child(2) {
+                    grid-area: b;
+                    height: 200px;
+                    border-radius: 0 25px 0 0;
+                }
+                &:nth-child(3) {
+                    grid-area: c;
+                    height: 200px;
+                }
+                &:nth-child(4) {
+                    grid-area: d;
+                    height: 304px;
+                    border-radius: 0 0 0 25px;
+                }
+                &:nth-child(5) {
+                    grid-area: e;
+                    height: 304px;
+                }
+            }
+            div:nth-child(6) {
+                grid-area: f;
+                height: 300px;
+            }
+        }
+    }
+    .grid-container-last-img {
+        border-radius: 0 0 25px 0;
+    }
+    .grid-container div img {
+        height: 150px !important;
+    }
+}

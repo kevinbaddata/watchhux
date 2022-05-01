@@ -1,0 +1,40 @@
+$theme_color: #8c7d7a;
+@import "./Components/Helper/helper";
+//Standard CSS
+@import "./Components/Standard/header";
+@import "./Components/Standard/footer";
+// Rolex Site
+@import "./Components/Rolex/container";
+@import "./Components/Rolex/products";
+// Tag Heuer Site
+@import "./Components/TagHeuer/container";
+@import "./Components/TagHeuer/products";
+// Omega Site
+@import "./Components/Omega/container";
+@import "./Components/Omega/content";
+@import "./Components/Omega/products";
+//Omega-Studio
+@import "";
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/*- Mixins + include
+- Extend
+- darken()
+- lighten()
+*/
+
+
+/*@mixin name {
+    ul {
+        background-color: none;
+    }
+}
+
+html {
+    @include name;
+}*/

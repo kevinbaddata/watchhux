@@ -1,0 +1,46 @@
+#rolex-site .grid-container {
+    display: grid;
+    max-width: 878px;
+    margin: 0 auto;
+    /* grid-auto-flow: dense; */
+    grid-template-areas: "a a a" "b c d" "e e f";
+    grid-gap: 5px;
+    margin-bottom: 100px;
+    grid-auto-flow: dense;
+    padding: 70px;
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    img {
+        width: 100%;
+        object-fit: cover;
+        @include slowTransition(0.2s);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+        &:nth-child(1) {
+            grid-area: a;
+            border-radius: 25px 25px 0 0;
+        }
+        &:nth-child(2) {
+            grid-area: b;
+        }
+        &:nth-child(3) {
+            grid-area: c;
+        }
+        &:nth-child(4) {
+            grid-area: d;
+        }
+        &:nth-child(5) {
+            grid-area: e;
+            border-radius: 0 0 0 25px;
+        }
+        &:nth-child(6) {
+            grid-area: f;
+            height: 254px;
+            border-radius: 0 0 25px 0;
+        }
+    }
+}

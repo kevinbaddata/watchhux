@@ -1,0 +1,24 @@
+#bond-site .products-container {
+    width: 70%;
+    margin: 62px auto;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 400px;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .z-index-item {
+            z-index: 1;
+        }
+    }
+}

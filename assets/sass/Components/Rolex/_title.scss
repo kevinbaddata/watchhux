@@ -1,0 +1,42 @@
+#rolex-site .watch-display {
+    .title-display {
+        background-color: #f9f9f9;
+        opacity: 0.9;
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .title-1 {
+        background: linear-gradient(90deg, #79b588, #3e593f);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        margin-top: 0.7em;
+    }
+    .title-2 {
+        background: linear-gradient(90deg, #80C4D1, #1B7851);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        margin-top: 0.7em;
+    }
+    .title-3 {
+        background: linear-gradient(90deg, #e9e8ed, #999999);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        margin-top: 0.7em;
+    }
+    .title-display-text {
+        font-size: 40px;
+        line-height: 1.05;
+        font-weight: 600;
+        margin-right: 20px;
+        letter-spacing: -0.015em;
+    }
+}
