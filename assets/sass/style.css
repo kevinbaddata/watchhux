@@ -198,7 +198,7 @@
     
     #main-site .showcase {
         width: 85%;
-        margin: 50px auto;
+        margin: 0 auto;
     }
     
     #main-site .showcase .container-item {
@@ -918,7 +918,7 @@ From #648573 -> #D0E1D9
         font-size: 20px
     }
     
-    #bond-site .section-2 {
+    #bond-site .container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -928,7 +928,7 @@ From #648573 -> #D0E1D9
         grid-gap: 60px;
     }
     
-    #bond-site .section-2-text-container {
+    #bond-site .text-container {
         display: flex;
         flex-direction: column;
         width: 80%;
@@ -936,42 +936,42 @@ From #648573 -> #D0E1D9
         grid-gap: 30px
     }
     
-    #bond-site .section-2-text-container span {
+    #bond-site .text-container span {
         font-size: 3.8rem;
         font-weight: 300 !important;
         text-align: center;
     }
     
-    #bond-site .section-2-text-container p {
+    #bond-site .text-container p {
         color: gray;
         text-align: center;
         font-size: 20px
     }
     
-    #bond-site .section-2-image-container {
+    #bond-site .image-container {
         display: flex;
         align-items: center;
         justify-content: center;
         grid-gap: 50px;
     }
     
-    #bond-site .section-2-image-container>img {
+    #bond-site .image-container>img {
         border-radius: 25px;
         width: 47%;
     }
     
-    #bond-site .section-2-image-container div {
+    #bond-site .image-container div {
         display: flex;
         /* justify-content: center; */
         flex-direction: column;
         align-items: center;
     }
     
-    #bond-site .section-2-image-container div img {
+    #bond-site .image-container div img {
         width: 80%;
     }
     
-    #bond-site .section-2 p {
+    #bond-site .container p {
         color: gray !important;
     }
     
@@ -983,25 +983,25 @@ From #648573 -> #D0E1D9
         padding: 0;
     }
     
-    #bond-site .section-2 {
+    #bond-site .container {
         padding: 0;
     }
     
-    #bond-site .section-2-text-container span {
+    #bond-site .text-container span {
         font-size: 2rem;
     }
     
-    #bond-site .section-2-image-container {
+    #bond-site .image-container {
         flex-direction: row;
         padding: 36px;
     }
     
-    #bond-site .section-2-image-container>img {
+    #bond-site .image-container>img {
         border-radius: 25px;
         width: 47% !important;
     }
     
-    #bond-site .section-2-image-container div {
+    #bond-site .image-container div {
         margin-top: -66px;
     }
     
@@ -1330,6 +1330,17 @@ From #648573 -> #D0E1D9
     /*MOBILE MENU END*/
     
     @media only screen and (max-width: 667px) {
+        .header-text {
+            position: absolute;
+            color: white;
+            bottom: 80px;
+            right: 5px;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        #main-site .brands .container {
+            grid-template-columns: repeat(1, 1fr);
+        }
         #menu-header .wrapper {
             display: block
         }
@@ -1350,10 +1361,10 @@ From #648573 -> #D0E1D9
         #main-site .brands .container img {
             width: 74% !important;
         }
-        #bond-site .section-2 .order-2 {
+        #bond-site .container .order-2 {
             order: 2
         }
-        #bond-site .section-2 .order-1 {
+        #bond-site .container .order-1 {
             order: 1
         }
         #menu-header button {
@@ -1575,21 +1586,21 @@ From #648573 -> #D0E1D9
         #bond-site .section-1 {
             padding: 0;
         }
-        #bond-site .section-2 {
+        #bond-site .container {
             padding: 0;
         }
-        #bond-site .section-2-text-container span {
+        #bond-site .text-container span {
             font-size: 2rem;
         }
-        #bond-site .section-2-image-container {
+        #bond-site .image-container {
             flex-direction: column;
             padding: 36px;
         }
-        #bond-site .section-2-image-container>img {
+        #bond-site .image-container>img {
             border-radius: 25px;
             width: 100% !important;
         }
-        #bond-site .section-2-image-container div {
+        #bond-site .image-container div {
             margin-top: -66px;
         }
         /*Header*/
@@ -1810,7 +1821,6 @@ From #648573 -> #D0E1D9
             grid-template-columns: repeat(2, 1fr);
         }
     }
-    /*OMEGA END*/
     
     #menu-header img {
         height: 185px;

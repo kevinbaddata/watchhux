@@ -5,6 +5,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mandon sells skin-care products for men. These products include face cream, shampoo, perfume and razors." />
+    <meta name="keywords" content="Shampoo, Trimmer, Facial, skin care" />
+    <meta name="author" content="Kevin Duzguner" />
+    <meta name="theme-color" content="#8c7d7a" />
+
+    <meta property="og:site_name" content="Watchhux Company" />
+    <meta property="og:title" content="Watch" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:image" content="file:///C:/PHP/htdocs/Web-Project/assets/img/Homepage/Header.jpg" />
+    <meta property="og:description" content="Watchhux sells high quality watches for everyone" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="Watchhux Company" />
+    <meta name="twitter:description" content="Watchhux sells high quality watches for everyone" />
+    <meta name="twitter:creator" content="" />
+    <meta name="twitter:image:src" content="" />
+    <!--  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap" rel="stylesheet" />
@@ -12,21 +30,115 @@
     />
     <link rel="stylesheet" href="./assets/sass/style.css">
 
-    <title>Document</title>
+    <title>Main</title>
 
     <style>
         .container-text {
             background-color: #F1F1F1;
         }
+        
+        .color {
+            background: linear-gradient( 90deg, #212022 0%, #555555 95%);
+        }
+        
+        .showcase {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            padding: 100px 0;
+        }
+        
+        .showcase img {
+            width: 100%
+        }
+        
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 84px;
+        }
+        
+        .left p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .left img {
+            width: 400px;
+            height: 400px;
+        }
+        
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 84px;
+        }
+        
+        .right img {
+            width: 400px;
+            height: 400px;
+        }
+        
+        .right p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        @media only screen and (max-width: 667px) {
+            #main-site .showcase {
+                width: 85%;
+                margin: 0 auto;
+            }
+            .showcase {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                justify-content: center;
+                padding: 100px 0;
+            }
+            .showcase img {
+                width: 100%;
+                border-radius: 10px;
+            }
+            .left {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-top: 84px;
+            }
+            .left p {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #fff;
+            }
+            .left img {
+                margin-bottom: 10px;
+                width: 350px;
+                border-radius: 10px;
+            }
+            .left-img {
+                order: 1
+            }
+            .left p {
+                order: 2
+            }
+        }
     </style>
+
 
 </head>
 
 <body>
-
-
     <header id="menu-header" class="main-menu-header">
-        <div class="header-image"> <img src="./assets/img/Homepage/m226659-0002_1901ac_009_1_headerc14e.jpg" alt="" class="site-banner" /></div>
+        <div class="header-image"> <img src="./assets/img/Homepage/Header.jpg" alt="Main-Site Header" class="site-banner" /></div>
 
 
         <nav>
@@ -51,8 +163,6 @@
             </ul>
 
         </nav>
-
-
 
         <div class="wrapper"><span class="bril"></span><span class="bril"></span><span class="bril"></span></div>
 
@@ -84,104 +194,10 @@
         </div>
 
 
-        <style>
-            .color {
-                background: linear-gradient( 90deg, #212022 0%, #555555 95%);
-            }
-            
-            .showcase {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                justify-content: center;
-                padding: 100px 0;
-            }
-            
-            .showcase img {
-                width: 100%
-            }
-            
-            .left {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                padding-top: 84px;
-            }
-            
-            .left p {
-                font-size: 1.5rem;
-                font-weight: bold;
-                color: #fff;
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            
-            .left img {
-                width: 400px;
-                height: 400px;
-            }
-            
-            .right {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                padding-top: 84px;
-            }
-            
-            .right img {
-                width: 400px;
-                height: 400px;
-            }
-            
-            .right p {
-                font-size: 1.5rem;
-                font-weight: bold;
-                color: #fff;
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            
-            @media only screen and (max-width: 667px) {
-                #main-site .showcase {
-                    width: 85%;
-                    margin: 0 auto;
-                }
-                .showcase {
-                    display: grid;
-                    grid-template-columns: repeat(1, 1fr);
-                    justify-content: center;
-                    padding: 100px 0;
-                }
-                .showcase img {
-                    width: 100%;
-                    border-radius: 10px;
-                }
-                .left {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    padding-top: 84px;
-                }
-                .left p {
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                    color: #fff;
-                }
-                .left img {
-                    margin-bottom: 10px;
-                    width: 350px;
-                    border-radius: 10px;
-                }
-                .left-img {
-                    order: 1
-                }
-                .left p {
-                    order: 2
-                }
-            }
-        </style>
 
         <section class="color">
+            <h1 style="display:none ">Text</h1>
+
             <div class="showcase">
                 <div class="left">
                     <p>
@@ -222,15 +238,15 @@
         <section class="brands">
             <h1 style="display:none ">Text</h1>
 
-            <div class="container ">
+            <div class="container">
                 <div class="rolex-logo ">
-                    <img src="./assets/img/Rolex/Rolex-Logo.png " alt=" ">
+                    <img src="./assets/img/Rolex/Rolex-Logo.png " alt="Rolex-Logo">
                 </div>
                 <div class="tagheuer-logo ">
-                    <img src="./assets/img/TAG_HEUER/Tag_Heuer-logo.jpg " alt=" ">
+                    <img src="./assets/img/TAG_HEUER/Tag_Heuer-logo.jpg " alt="Tag Heuer Logo">
                 </div>
                 <div class="omega-logo ">
-                    <img src="./assets/img/Omega/Omega-logo.png " alt=" ">
+                    <img src="./assets/img/Omega/Omega-logo.png " alt="Omega Logo">
                 </div>
             </div>
 
@@ -239,18 +255,11 @@
 
     </main>
 
-
-
-
-
-
-
-
     <footer>
         <br>
         <hr>
         <div class="footer-head ">
-            <span>  <img src="./assets/img/Omega/Omega-logo.png " alt=" " width="60" height="50" /></span>
+            <span>  <img src="./assets/img/Omega/Omega-logo.png " alt="" width="60" height="50" /></span>
             <span><i class="fas fa-arrow-right "></i></span>
             <span>Watchhux</span>
         </div>
@@ -317,20 +326,8 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script>
-        $('.wrapper').on('click', function() {
+    <script src="./assets/js/nav_menu.js"></script>
 
-            if (!$('span').hasClass("grill")) {
-                $('span').addClass('grill');
-                $('h1').show();
-                $('.slider').addClass('showslide');
-            } else {
-                $('span').removeClass('grill');
-                $('h1').hide();
-                $('.slider').removeClass('showslide');
-            }
-        });
-    </script>
 </body>
 
 </html>
