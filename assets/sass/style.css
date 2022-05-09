@@ -288,6 +288,10 @@
         cursor: pointer;
     }
     
+    footer .footer-menu ul li {
+        border-bottom: none !important;
+    }
+    
     footer .footer-menu>ul>li:first-child {
         border-bottom: none;
         font-size: 20px;
@@ -308,10 +312,6 @@
         list-style: none
     }
     
-    .current-page {
-        margin-left: 12em;
-    }
-    
     #rolex-site .rolex-logo {
         text-align: center;
     }
@@ -319,6 +319,11 @@
     #rolex-site .rolex-logo img {
         width: 10%;
         position: relative;
+    }
+    
+    #rolex-site .current-page {
+        margin-left: 8.4em;
+        margin-top: 30px;
     }
     
     #rolex-site .grid-container {
@@ -521,6 +526,11 @@ From #648573 -> #D0E1D9
     /*Rolex Site END*/
     /*Tag Heuer START*/
     
+    #tagheuer-site .current-page {
+        margin-left: 11em;
+        margin-top: 40px !important;
+    }
+    
     #tagheuer-site .grid-container {
         display: grid;
         grid-template-areas: "a a b" "a a c" "d e f ";
@@ -673,6 +683,17 @@ From #648573 -> #D0E1D9
     }
     /*Tag Heuer END*/
     /*Omega START*/
+    
+    #omega-site .bond-site-image-container {
+        position: absolute;
+        top: 15%;
+        right: 70px;
+        color: white;
+    }
+    
+    #omega-site .bond-site-image-container h1 {
+        font-size: 42px;
+    }
     
     #omega-site .logo {
         text-align: center;
@@ -862,8 +883,9 @@ From #648573 -> #D0E1D9
         color: #c40d2e !important;
     }
     
-    #bond-site .current-page li {
-        margin-top: 30px;
+    #bond-site .current-page {
+        margin-left: 11em;
+        margin-top: 40px !important;
     }
     
     .bond-logo {
@@ -1325,7 +1347,7 @@ From #648573 -> #D0E1D9
     }
     
     footer .footer-menu ul li:hover {
-        border-bottom: 1px solid #8c7d7a;
+        border-bottom: 1px solid #8c7d7a !important;
     }
     /*MOBILE MENU END*/
     
@@ -1569,6 +1591,13 @@ From #648573 -> #D0E1D9
         /*OMEGA END*/
         #bond-site .products-container {
             grid-template-columns: repeat(1, 1fr);
+        }
+        #omega-site .bond-site-image-container {
+            top: 26%;
+            right: 6px;
+        }
+        #omega-site .bond-site-image-container h1 {
+            font-size: 28px;
         }
         /*Bond START*/
         #bond-site .products-container .container {

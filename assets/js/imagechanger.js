@@ -31,14 +31,16 @@ for (var i = 0; i < straps.length; i++) {
 //...
 
 
-
+// Set a time handler that executes code every 10 seconds
 interval = setInterval(function() {
+    // Generate a random number between 0 and strap arrays length
     var rng = Math.random() * straps.length;
     straps[Math.floor(rng)].click();
 }, 10000);
 
 
 document.addEventListener('click', function(event) {
+    // If click event doesn't contain classname strap stop the time handler
     if (event.target.className != 'strap') {
         clearInterval(interval);
     }
@@ -48,9 +50,9 @@ var counter = 0;
 
 
 document.getElementById('left-changer').addEventListener('click', function() {
-    // let straps = [1, 2, 3];
-    // let rng = Math.floor(Math.random() * straps.length);
 
+
+    // Increment by one each iteration
     counter++;
 
     document.querySelector('.left-strap-mobil').src = 'assets/img/Omega-Studio/Strap-' + counter + '.png';
@@ -59,6 +61,7 @@ document.getElementById('left-changer').addEventListener('click', function() {
     document.getElementById('left-strap-btn-mobil').setAttribute('data-name', 'Strap-' + counter);
     document.getElementById('left-strap-btn-mobil').setAttribute('data-value', './assets/img/Omega-Studio/Watch-' + counter + '.png');
 
+    // Reset the counter if equals 3
     if (counter == 3) {
         counter = 0;
     }
@@ -68,9 +71,8 @@ document.getElementById('left-changer').addEventListener('click', function() {
 
 var rightCounter = 3;
 document.getElementById('right-changer').addEventListener('click', function() {
-    // let straps = [1, 2, 3];
-    // let rng = Math.floor(Math.random() * straps.length);
 
+    // Increment right counter by one each iteration
     rightCounter++;
 
     document.getElementById('right-strap-mobil').src = 'assets/img/Omega-Studio/Strap-' + rightCounter + '.png';
@@ -79,6 +81,7 @@ document.getElementById('right-changer').addEventListener('click', function() {
     document.getElementById('right-strap-btn-mobil').setAttribute('data-name', 'Strap-' + rightCounter);
     document.getElementById('right-strap-btn-mobil').setAttribute('data-value', './assets/img/Omega-Studio/Watch-' + rightCounter + '.png');
 
+    // Reset the counter if equals 6
     if (rightCounter == 6) {
         rightCounter = 3;
     }

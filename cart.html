@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/img/Omega/Omega-logo.png" rel="icon" />
+    <link href="./assets/img/Omega/Omega-logo.png" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="./assets/sass/style.css">
+    <title>Document</title>
+
+    <style>
+        .cart {
+            width: 70%;
+            margin: 0 auto;
+        }
+        
+        .cart .cart-main-title {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .cart .cart-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .cart .cart-container .cart-item {}
+        
+        .cart .cart-container .cart-item img {
+            width: 100%;
+        }
+        
+        .cart .cart-container .cart-title {
+            margin: 20px 0
+        }
+        
+        .cart .cart-container .cart-item .cart-title-rows {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: 10px 0
+        }
+        
+        .cart .cart-container .bag-item {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+        
+        .bag-item div {
+            text-align: end;
+        }
+        
+        .item-prop {
+            text-align: start !important;
+        }
+        
+        .basket {
+            width: 70%;
+        }
+        
+        .total {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            right: 53px;
+        }
+        
+        .total>div {
+            border: 1px solid black;
+            height: 200px;
+            width: 80%;
+            margin-top: 50px;
+            border-radius: 10px
+        }
+        
+        .total>div div {
+            margin-bottom: 10px;
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+        
+        .buy-btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: -9px;
+            background-color: #0071e3;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: all 0.3 ease-in-out;
+            cursor: pointer;
+        }
+        
+        .basket div:last-child {
+            border-bottom: none;
+        }
+        
+        .buy-btn:hover {
+            background-color: #0077ed;
+        }
+        
+        @media only screen and (max-width: 667px) {
+            .basket {
+                width: 65%;
+            }
+            .total {
+                width: 37%;
+                right: 10px;
+            }
+            .item-prop h1 {
+                font-size: 15px
+            }
+            .total>div div:last-child {
+                border-bottom: none;
+                margin-bottom: 0;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+
+    <section class="cart">
+        <div class="cart-main-title">
+            <h1> <a href="index.html" style="text-decoration: none; color:black"> Watchhux</a></h1>
+        </div>
+        <section class="current-page">
+            <h2 style="display:none">Text</h2>
+
+            <ol>
+                <li>Main / <span style="color:#868e96">Cart</span></li>
+
+            </ol>
+
+        </section>
+        <div>
+            <!-- Watchs and price -->
+
+            <div class="cart-container">
+                <div class="cart-item basket">
+                    <div class="cart-title">
+                        <h1> Shoping Bag</h1>
+                    </div>
+                    <div class="cart-title-rows">
+                        <span class="">Product</span>
+                        <span class="">Price</span>
+                    </div>
+
+                    <div class="bag-item">
+                        <div><img src="./assets/img/TAG_HEUER(copy)/Product-3.png"></div>
+
+                        <div class="item-prop">
+                            <h1>Rolex Watch</h1>
+                            <p>Size:</p>
+                            <p>Color:</p>
+                            <p>Remove:</p>
+                        </div>
+
+                        <div></div>
+
+                        <div>60$</div>
+                    </div>
+
+
+                    <div class="bag-item">
+                        <div><img src="./assets/img/TAG_HEUER(copy)/Product-3.png"></div>
+
+                        <div class="item-prop">
+                            <h1>Rolex Watch</h1>
+                            <p>Size:</p>
+                            <p>Color:</p>
+                            <p>Remove:</p>
+                        </div>
+
+                        <div></div>
+
+                        <div>60$</div>
+                    </div>
+
+                    <div class="bag-item">
+                        <div><img src="./assets/img/TAG_HEUER(copy)/Product-3.png"></div>
+                        <div class="item-prop">
+                            <h1>Rolex Watch</h1>
+                            <p>Size:</p>
+                            <p>Color:</p>
+                            <p>Remove:</p>
+                        </div>
+
+                        <div></div>
+
+                        <div>60$</div>
+                    </div>
+                </div>
+
+
+
+                <div class="cart-item total">
+                    <div>
+                        <div>Cargo Price: 10$</div>
+                        <div>Sup Total: 300$</div>
+                        <div>Total: 310$</div>
+                        <div>
+                            <button class="buy-btn">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- FOOTER START -->
+    <footer>
+        <br>
+        <hr>
+        <div class="footer-head">
+            <span>  <img src="./assets/img/Omega/Omega-logo.png" alt="" width="60" height="50" /></span>
+            <span><i class="fas fa-arrow-right"></i></span>
+            <span>Omega</span>
+        </div>
+        <hr>
+
+
+        <div class="footer-menu">
+            <ul>
+                <li>Text <span>+</span>
+                    <ul>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>Text <span>+</span>
+
+                    <ul>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>Text <span>+</span>
+                    <ul>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                    </ul>
+
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>Text <span>+</span>
+                    <ul>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                        <li>Text</li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </footer>
+    <!-- FOOTER END -->
+</body>
+
+</html>

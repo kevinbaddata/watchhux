@@ -13,4 +13,6 @@ $('.wrapper').on('click', function() {
         $('h1').hide();
         $('.slider').removeClass('showslide');
     }
+    //...
 });
+//...
