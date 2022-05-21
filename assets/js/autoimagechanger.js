@@ -13,7 +13,6 @@
     ];
 
 
-    var length = colorText.length;
     var timer = 2000;
     var counter = 0;
 
@@ -28,7 +27,7 @@
 
 
         // Reset if counter equals 3
-        if (length === counter) {
+        if (counter === colorText.length) {
             counter = 0;
             // ...
         }

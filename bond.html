@@ -4,9 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Mandon sells skin-care products for men. These products include face cream, shampoo, perfume and razors." />
     <meta name="keywords" content="Shampoo, Trimmer, Facial, skin care" />
@@ -28,6 +25,8 @@
     <link href="./assets/img/007-Edition/007-edition.png" rel="icon" />
     <link href="./assets/img/007-Edition/007-edition.png" rel="apple-touch-icon" />
     <link rel="stylesheet" href="./assets/sass/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>007</title>
 
     <style>
@@ -35,13 +34,19 @@
             #menu-header h1 {
                 font-size: 24px;
             }
-            #bond-site .section-2 {
-                text-align: center;
-            }
             .current-page {
                 text-align: center;
                 margin-left: 0
             }
+        }
+        
+        #menu-ul a,
+        #menu-ul li {
+            color: white !important;
+        }
+        
+        #menu-header .dropdown-content a:hover {
+            background-color: gray !important;
         }
     </style>
 
@@ -50,13 +55,12 @@
 <body>
 
     <header id="menu-header">
+
         <div class="double-o-edition">
             <img src="./assets/img/007-Edition/007-Edition.jpg" alt="Bond Header">
-            <h1>DISCOVER THE UNIVERSE</h1>
 
             <div class="mask"></div>
         </div>
-
         <nav style="z-index:50">
             <div class="menu-btn-div">
                 <button class="menu-button"><span style="color: #8c7d7a;">Meny</span></button>
@@ -79,6 +83,7 @@
 
             </ul>
         </nav>
+        <span class="header-title">DISCOVER THE UNIVERSE</span>
 
         <div class="wrapper"><span class="bril"></span><span class="bril"></span><span class="bril"></span></div>
 
@@ -88,6 +93,9 @@
                 <li><a href="rolex.html">Rolex</a></li>
                 <li><a href="tagheuer.html">Tag Heuer</a></li>
                 <li><a href="omega.html">Omega</a></li>
+                <li><a href="strap.html">Omega-Studio</a></li>
+                <li><a href="bond.html">Bond</a></li>
+
             </ul>
         </div>
 
@@ -116,10 +124,10 @@
         </div>
         <!-- Bond Watch And image -->
 
-        <div class="section-1">
+        <div class="bond-intro">
             <h2 style="display:none">Text</h2>
 
-            <div class="section-1-text-container">
+            <div class="bond-intro-text-container">
                 <span>THE PERFECT WATCH FOR WORLD’S MOST BELOVED SPY</span>
                 <p>Lindy Hemming, the Oscar-winning costume designer, was responsible for casting 007’s watch in GoldenEye. She said, “I was convinced that Commander Bond, a naval man, a diver and a discreet gentleman of the world would wear the Seamaster
                     with the blue dial.” We agree, Lindy.</p>
@@ -129,7 +137,7 @@
 
 
         <section class="bond-showcase">
-            <h1 style="display:none">Text</h1>
+            <h2 style="display:none">Text</h2>
 
             <div class="container">
                 <div class="text-container">
@@ -284,7 +292,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./assets/img/007-Edition/Product-5.png " alt=" ">
+                    <img src="./assets/img/007-Edition/Product-6.png " alt=" ">
                     <p>Omega Watch XxX</p>
                     <p>10$</p>
 
@@ -299,68 +307,52 @@
     <footer>
         <br>
         <hr>
-        <div class="footer-head ">
-            <span>  <img src="./assets/img/007-Edition/007-edition.png " alt=" " width="30 " height="45 " /></span>
-            <span><i class="fas fa-arrow-right "></i></span>
-            <span>007</span>
+        <div class="footer-head">
+            <span> <img src="./assets/img/007-Edition/007-logo.png" alt="Bond Logo" width="85" height="50" /></span>
+            <span><i class="fas fa-arrow-right"></i></span>
+            <span>007 Edition</span>
         </div>
         <hr>
 
 
-        <div class="footer-menu ">
+        <div class="footer-menu">
             <ul>
-                <li>Text <span>+</span>
+                <li>Contact <span>+</span>
                     <ul>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
+                        <li>Call us</li>
+                        <li>Store Location</li>
+                        <li>Other contact routes</li>
+
+                    </ul>
+                </li>
+
+            </ul>
+            <ul>
+                <li>Jobs<span>+</span>
+
+                    <ul>
+                        <li>Work for us</li>
+                        <li>Available jobs</li>
+                        <li>Internship</li>
+
                     </ul>
                 </li>
 
             </ul>
 
             <ul>
-                <li>Text <span>+</span>
-
+                <li>About the site<span>+</span>
                     <ul>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                    </ul>
-                </li>
-
-            </ul>
-
-            <ul>
-                <li>Text <span>+</span>
-                    <ul>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
+                        <li>Accessibility</li>
+                        <li>Cookies</li>
+                        <li>Personal information</li>
                     </ul>
 
                 </li>
 
             </ul>
 
-            <ul>
-                <li>Text <span>+</span>
-                    <ul>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                    </ul>
-                </li>
 
-            </ul>
 
         </div>
 

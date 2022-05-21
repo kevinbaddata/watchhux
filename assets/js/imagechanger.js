@@ -46,6 +46,7 @@ document.addEventListener('click', function(event) {
     }
 });
 
+// Initalize variable to not contain junk value
 var counter = 0;
 
 
@@ -53,9 +54,13 @@ document.getElementById('left-changer').addEventListener('click', function() {
 
 
     // Increment by one each iteration
-    counter++;
 
-    document.querySelector('.left-strap-mobil').src = 'assets/img/Omega-Studio/Strap-' + counter + '.png';
+
+    $('.left-strap-mobil').fadeOut(500, function() { // hide
+        counter++;
+        document.querySelector('.left-strap-mobil').src = 'assets/img/Omega-Studio/Strap-' + counter + '.png';
+        $('.left-strap-mobil').fadeIn(500); // show
+    });
 
     document.getElementById('left-strap-btn-mobil').setAttribute('class', 'toggle-' + counter + ' strap')
     document.getElementById('left-strap-btn-mobil').setAttribute('data-name', 'Strap-' + counter);
@@ -73,9 +78,15 @@ var rightCounter = 3;
 document.getElementById('right-changer').addEventListener('click', function() {
 
     // Increment right counter by one each iteration
-    rightCounter++;
 
-    document.getElementById('right-strap-mobil').src = 'assets/img/Omega-Studio/Strap-' + rightCounter + '.png';
+
+    $('#right-strap-mobil').fadeOut(500, function() { // hide
+        rightCounter++;
+
+        document.getElementById('right-strap-mobil').src = 'assets/img/Omega-Studio/Strap-' + rightCounter + '.png';
+        $('#right-strap-mobil').fadeIn(500); // show
+    });
+
 
     document.getElementById('right-strap-btn-mobil').setAttribute('class', 'toggle-' + rightCounter + ' strap')
     document.getElementById('right-strap-btn-mobil').setAttribute('data-name', 'Strap-' + rightCounter);

@@ -32,106 +32,7 @@
 
     <title>Main</title>
 
-    <style>
-        .container-text {
-            background-color: #F1F1F1;
-        }
-        
-        .color {
-            background: linear-gradient( 90deg, #212022 0%, #555555 95%);
-        }
-        
-        .showcase {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-content: center;
-            padding: 100px 0;
-        }
-        
-        .showcase img {
-            width: 100%
-        }
-        
-        .left {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding-top: 84px;
-        }
-        
-        .left p {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #fff;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        
-        .left img {
-            width: 300px;
-            height: 400px;
-        }
-        
-        .right {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 84px;
-        }
-        
-        .right img {
-            width: 400px;
-            height: 400px;
-        }
-        
-        .right p {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #fff;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        
-        @media only screen and (max-width: 667px) {
-            #main-site .showcase {
-                width: 85%;
-                margin: 0 auto;
-            }
-            .showcase {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                justify-content: center;
-                padding: 100px 0;
-            }
-            .showcase img {
-                width: 100%;
-                border-radius: 10px;
-            }
-            .left {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                padding-top: 84px;
-            }
-            .left p {
-                font-size: 1.5rem;
-                font-weight: bold;
-                color: #fff;
-            }
-            .left img {
-                margin-bottom: 10px;
-                width: 350px;
-                border-radius: 10px;
-            }
-            .left-img {
-                order: 1
-            }
-            .left p {
-                order: 2
-            }
-        }
-    </style>
+
 
 
 </head>
@@ -171,6 +72,9 @@
                 <li><a href="rolex.html">Rolex</a></li>
                 <li><a href="tagheuer.html">Tag Heuer</a></li>
                 <li><a href="omega.html">Omega</a></li>
+                <li><a href="strap.html">Omega-Studio</a></li>
+                <li><a href="bond.html">Bond</a></li>
+
             </ul>
         </div>
 
@@ -188,147 +92,153 @@
 
     <main id="main-site">
 
-        <div class="container-text">
-            <img src="./assets/img/Homepage/ezgif-2-4ee4c6ac04.png " alt="Rolex Banner" style="width:100%">
-        </div>
+        <section class="grid-section">
+            <h2 style="display:none">Text</h2>
 
 
+            <!-- RIGHT IMAGE -->
+            <div class="left"><img src="./assets/img/Homepage/Right.jpg" alt="Tag Heuer Watch Picture"></div>
 
-        <section class="color">
-            <h1 style="display:none ">Text</h1>
-
-            <div class="showcase">
-                <div class="left">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, similique maxime!
-                    </p>
-
-                    <img class="left-img" src="./assets/img/Homepage/nedladdning.png" alt="Tag Heuer Left Image" />
-                </div>
-
-                <div>
-                    <img src="./assets/img/Homepage/ezgif-5-b47fdc95d1.png" alt="Tag Heuer Right Image" />
-
-                </div>
-            </div>
-
-
-
-            <div class="showcase">
-                <div>
-                    <img src="./assets/img/Homepage/ezgif-5-b47fdc95d1.png" alt="" />
-
-                </div>
-
-                <div class="right">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, similique maxime!
-                    </p>
-
-                    <img class="left-img" src="./assets/img/Homepage/nedladdning.jpg" alt="" />
-                </div>
-
-
-            </div>
-
+            <!-- LEFT IMAGE -->
+            <div class="right"><img src="./assets/img/Homepage/Left.png" alt="Omega Watch Picture"></div>
         </section>
+
+        <!-- WATCH COLLECTION SECTION -->
+        <section class="collections">
+            <h2>Collections</h2>
+            <div class="container">
+
+                <div>
+                    <img src="./assets/img/Homepage/Collection-1.png" alt="Rolex Watch">
+                    <p class="watch-name">test 1</p>
+                    <p class="watch-price">30.000$</p>
+                </div>
+
+                <div>
+                    <img src="./assets/img/Homepage/Collection-2.png" alt="Tag Heuer Watch">
+                    <p class="watch-name">test 1</p>
+                    <p class="watch-price">30.000$</p>
+                </div>
+
+                <div>
+                    <img src="./assets/img/Homepage/Collection-3.png" alt=" Omega Watch">
+                    <p class="watch-name">test 1</p>
+                    <p class="watch-price">30.000$</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="reviews">
+            <div class="title-container">
+                <h2>What customers are saying</h2>
+            </div>
+            <div class="container">
+                <div>
+                    <img src="./assets/img/Homepage/David.jpg" alt="A picture of David one of our customers">
+                    <div>
+                        <p class="name">David</p>
+                        <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aliquam doloremque adipisci natus saepe animi illum aliquid dolor molestias quidem, dolores nobis, nesciunt dolorem tempore magni repellat! Perferendis, nisi illo!</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/img/Homepage/Elena.jpg" alt="A picture of Elena one of our customers">
+                    <div>
+                        <p class="name">Elena</p>
+                        <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aliquam doloremque adipisci natus saepe animi illum aliquid dolor molestias quidem, dolores nobis, nesciunt dolorem tempore magni repellat! Perferendis, nisi illo!</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/img/Homepage/Nathan.jpg" alt="A picture of Nathan one of our customers">
+                    <div>
+                        <p class="name">Nathan</p>
+                        <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aliquam doloremque adipisci natus saepe animi illum aliquid dolor molestias quidem, dolores nobis, nesciunt dolorem tempore magni repellat! Perferendis, nisi illo!</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+        </section>
+
 
         <!-- BRAND INTRO SECTION-->
         <section class="brands">
             <h1 style="display:none ">Text</h1>
 
             <div class="container">
-                <div class="rolex-logo ">
-                    <img src="./assets/img/Rolex/Rolex-Logo.png " alt="Rolex-Logo">
+                <div class="rolex-logo">
+                    <img src="./assets/img/Rolex/Rolex-Logo.png" alt="Rolex-Logo" id="rolex-logo">
                 </div>
-                <div class="tagheuer-logo ">
-                    <img src="./assets/img/TAG_HEUER/Tag_Heuer-logo.jpg " alt="Tag Heuer Logo">
+                <div class="tagheuer-logo">
+                    <img src="./assets/img/TAG_HEUER/TagHeuer-logo.png" alt=" Tag Heuer Logo " id="tagheuer-logo ">
                 </div>
                 <div class="omega-logo ">
-                    <img src="./assets/img/Omega/Omega-logo.png " alt="Omega Logo">
+                    <img src="./assets/img/Omega/Omega-logo.png " alt="Omega Logo " id="omega-logo ">
                 </div>
             </div>
 
         </section>
         <!-- BRAND INTRO SECTION END-->
-
-
     </main>
     <!-- FOOTER START -->
     <footer>
         <br>
         <hr>
         <div class="footer-head ">
-            <span>  <img src="./assets/img/Omega/Omega-logo.png " alt="" width="60" height="50" /></span>
+            <span>  <img src="./assets/img/TAG_HEUER/Tag_Heuer-logo.jpg " alt="Tag Heuer Logo " width="85 " height="75 " /></span>
             <span><i class="fas fa-arrow-right "></i></span>
-            <span>Watchhux</span>
+            <span>Tag Heuer</span>
         </div>
         <hr>
 
 
         <div class="footer-menu ">
             <ul>
-                <li>Text <span>+</span>
+                <li>Contact <span>+</span>
                     <ul>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
+                        <li>Call us</li>
+                        <li>Store Location</li>
+                        <li>Other contact routes</li>
+
+                    </ul>
+                </li>
+
+            </ul>
+            <ul>
+                <li>Jobs<span>+</span>
+
+                    <ul>
+                        <li>Work for us</li>
+                        <li>Available jobs</li>
+                        <li>Internship</li>
+
                     </ul>
                 </li>
 
             </ul>
 
             <ul>
-                <li>Text <span>+</span>
-
+                <li>About the site<span>+</span>
                     <ul>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                    </ul>
-                </li>
-
-            </ul>
-
-            <ul>
-                <li>Text <span>+</span>
-                    <ul>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
+                        <li>Accessibility</li>
+                        <li>Cookies</li>
+                        <li>Personal information</li>
                     </ul>
 
                 </li>
 
             </ul>
 
-            <ul>
-                <li>Text <span>+</span>
-                    <ul>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                    </ul>
-                </li>
 
-            </ul>
 
         </div>
 
     </footer>
     <!-- FOOTER END -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="./assets/js/nav_menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js " integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <script src="./assets/js/nav_menu.js "></script>
 
 </body>
 

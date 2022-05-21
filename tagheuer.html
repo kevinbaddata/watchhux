@@ -5,9 +5,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Mandon sells skin-care products for men. These products include face cream, shampoo, perfume and razors." />
     <meta name="keywords" content="Shampoo, Trimmer, Facial, skin care" />
     <meta name="author" content="Kevin Duzguner" />
@@ -55,198 +52,42 @@
             right: 0;
             bottom: 12px;
         }
-        /* #tagheuer-site .splide {
-            float: right;
+        
+        .slider {
+            padding-bottom: 20px
         }
         
-        #tagheuer-site .splide img {
-            width: 30%;
+        .slider .splide .splide__track img {
             border-radius: 25px;
-        }*/
-        /*GRID CONTAINER*/
-        
-        @media only screen and (max-width: 667px) {
-            #tagheuer-site .grid-container {
-                /* grid-auto-flow: dense; */
-                grid-template-areas: "a a" "b c" "d d" "e e";
-                grid-gap: 5px;
-                margin-bottom: 100px;
-                border-radius: 25px;
-            }
-            #tagheuer-site .grid-container>img:nth-child(5) {
-                display: none
-            }
-            #tagheuer-site .grid-container>div:nth-child(6) {
-                display: none;
-            }
-            .grid-container img {
-                height: 300px !important;
-            }
-            .logo img {
-                width: 25%;
-                margin-bottom: 20px;
-            }
-            nav ul {
-                display: none;
-                top: 0;
-            }
-            nav {
-                top: -2px;
-            }
-            button:focus+ul {
-                display: block;
-            }
-            .menu-btn-div {
-                text-align: center;
-            }
-            button {
-                margin-bottom: 10px;
-            }
-            nav img {
-                height: 167px;
-            }
-            h1 {
-                font-size: 2em !important;
-            }
-            .img-text-1 {
-                position: absolute;
-                right: 0;
-                bottom: 20px;
-            }
-            .img-text-2 {
-                position: absolute;
-                right: 0;
-                bottom: 20px;
-            }
-            section {
-                margin-top: 0px;
-            }
-            .img-footer-2 {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                grid-gap: 10px
-            }
-            .grid-container img {
-                height: 300px
-            }
-            .text {
-                display: none;
-            }
-            .list {
-                background-color: #111111;
-                height: 750px;
-                display: flex;
-            }
-            .list li {
-                display: none;
-            }
-            .list div {
-                margin-top: 53px;
-            }
-            .list p {
-                text-align: center;
-                font-size: 2em;
-                color: #86868B;
-                margin-bottom: 60px;
-            }
-            .list div {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-            }
-            #tagheuer-site .products-container .container {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-            }
-            .products h2 {
-                text-align: center;
-                font-size: 2em;
-                margin-top: 2em;
-                color: #8c7d7a;
-            }
-            .products-img {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-            }
-            .products-img p {
-                text-align: center;
-                margin-top: -12px;
-                margin-bottom: 13px;
-            }
+            cursor: pointer;
         }
         
-        @media (min-width: 668px) and (max-width: 1024px) {
-            #tagheuer-site .grid-container {
-                /* grid-auto-flow: dense; */
-                grid-template-areas: "a a" "b c" "d e" "f f";
-                grid-gap: 5px;
-                margin-bottom: 100px;
-                border-radius: 25px;
-            }
-            #tagheuer-site .grid-container>div:nth-child(6) {
-                display: none;
-            }
-            .list p {
-                margin-bottom: 10px;
-            }
-            .secondshowcase {
-                margin-bottom: 101px;
-            }
-            .firstshowcase {
-                margin-bottom: 72px;
-            }
-            section {
-                margin-top: 10px !important;
-            }
-            nav ul {
-                justify-content: space-between;
-                list-style-type: none;
-                display: block;
-                display: flex !important;
-            }
-            .products-img {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .img-text-1 {
-                position: absolute;
-                right: 0;
-                bottom: -162px;
-            }
-            .img-text-1 p {
-                text-align: center
-            }
-            .img-text-2 {
-                position: absolute;
-                right: 0;
-                bottom: -79px;
-            }
-            .menu-button {
-                display: none
-            }
+        .slider .splide--draggable {
+            margin-top: 50px;
         }
         
-        @media only screen and (min-width:1025px) {
-            .list p {
-                margin-bottom: 10px;
-            }
-            section {
-                margin-top: 0px !important;
-            }
-            nav ul {
-                justify-content: space-between;
-                list-style-type: none;
-                display: block;
-                display: flex !important;
-            }
-            .products-img {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-            }
-            .img-text-1 {
-                bottom: -16px;
-            }
+        .slider .splide .splide__pagination li {
+            padding: 5px;
+            border-radius: 5px;
+            margin-left: 1px;
+            background-color: #000000;
+        }
+        
+        .slider .splide .splide__pagination button {
+            background: rgba(255, 254, 255, 0.547);
+            border: 0;
+            border-radius: 50%;
+            display: inline-block;
+            height: 15px;
+            margin: 3px;
+            opacity: 1;
+            padding: 0;
+            transition: transform .2s linear;
+            width: 15px;
+        }
+        
+        .slider .splide .splide__pagination__page.is-active {
+            background: #ebeaeb;
         }
     </style>
 </head>
@@ -287,6 +128,9 @@
                 <li><a href="rolex.html">Rolex</a></li>
                 <li><a href="tagheuer.html">Tag Heuer</a></li>
                 <li><a href="omega.html">Omega</a></li>
+                <li><a href="strap.html">Omega-Studio</a></li>
+                <li><a href="bond.html">Bond</a></li>
+
             </ul>
         </div>
     </header>
@@ -305,21 +149,22 @@
         <!-- LINK MARKER END -->
         <div class="logo">
             <a href="#logo">
-                <img src="./assets/img/TAG_HEUER/Tag_Heuer-logo.jpg" alt="Tag Heuer Logo" />
+                <img src="./assets/img/TAG_HEUER/TagHeuer-logo.png" alt="Tag Heuer Logo" />
             </a>
         </div>
 
         <!-- GRID CONTAINER -->
         <section class="grid-container">
-            <img src="./assets/img/TAG_HEUER(copy)/Grid-1.png" alt="Grid-Item-1">
-            <img src="./assets/img/TAG_HEUER(copy)/Grid-2.jpg" alt="Grid-Item-2">
-            <img src="./assets/img/TAG_HEUER(copy)/Grid-3.jpg" alt="Grid-Item-3">
-            <img src="./assets/img/TAG_HEUER(copy)/Grid-4.png" alt="Grid-Item-4">
-            <img src="./assets/img/TAG_HEUER(copy)/Grid-5.png" alt="Grid-Item-5">
+
+            <img src="./assets/img/TAG_HEUER/Grid-1.png" alt="Grid-Item-1">
+            <img src="./assets/img/TAG_HEUER/Grid-2.jpg" alt="Grid-Item-2">
+            <img src="./assets/img/TAG_HEUER/Grid-3.jpg" alt="Grid-Item-3">
+            <img src="./assets/img/TAG_HEUER/Grid-4.png" alt="Grid-Item-4">
+            <img src="./assets/img/TAG_HEUER/Grid-5.png" alt="Grid-Item-5">
 
             <div>
-                <img src="./assets/img/TAG_HEUER(copy)/Grid-6.png" alt="Grid-Item-6">
-                <img id="grid-container-last-img" src="./assets/img/TAG_HEUER(copy)/Grid-7.png" alt="Grid-Item-7">
+                <img src="./assets/img/TAG_HEUER/Grid-6.png" alt="Grid-Item-6">
+                <img id="grid-container-last-img" src="./assets/img/TAG_HEUER/Grid-7.png" alt="Grid-Item-7">
             </div>
         </section>
         <!-- GRID CONTAINER END -->
@@ -329,19 +174,19 @@
             <h1>Bigger Screen <br> Bigger <br>Oppurtunitites</h1>
 
             <div class="firstshowcase" style="position: relative;">
-                <img src="./assets/img/TAG_HEUER(copy)/Background.png" alt="Background Image 1">
+                <img src="./assets/img/TAG_HEUER/Background.png" alt="Background Image 1">
 
 
                 <div class="img-text-1">
 
-                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse eos distinctio est tenetur deserunt laborum dignissimos aut non itaque possimus commodi eveniet, quae dolore, sit ipsa impedit? Consectetur, sint quam?</p>
+                    <p class="text">TAG Heuer’s high-precision timing innovations have kept pace with the evolution of sports since 1860. <br> Our timepieces make it possible to capture every fraction of a second of a performance. From the wrists of the drivers <br>                        who have marked the history of motor racing to your wrist, TAG Heuer watches have a lasting impact on their time and <br> their era.</p>
                 </div>
             </div>
 
 
             <div class="secondshowcase" style="position:relative">
 
-                <img style="height: 100%;" src="./assets/img/TAG_HEUER(copy)/Background_2.png" alt="Background Image 2">
+                <img style="height: 100%;" src="./assets/img/TAG_HEUER/Background_2.png" alt="Background Image 2">
 
                 <div class="img-text-2">
                     <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse eos distinctio est tenetur deserunt laborum dignissimos aut non itaque possimus commodi eveniet, quae dolore, sit ipsa impedit? Consectetur, sint quam?</p>
@@ -374,7 +219,7 @@
         <section style="display: flex; justify-content: center;">
             <h2 style="display:none">Text</h2>
 
-            <img src="./assets/img/TAG_HEUER(copy)/Rand.png" alt="Background Image 3" style="width: 100%; margin-top:50px">
+            <img src="./assets/img/TAG_HEUER/Rand.png" alt="Background Image 3" style="width: 100%; margin-top:50px">
         </section>
 
         <!-- PRODUCTS START -->
@@ -383,7 +228,8 @@
 
             <div class="container">
                 <div>
-                    <img src="./assets/img/TAG_HEUER(copy)/Product-1.png" alt="First Product">
+                    <img src="./assets/img/TAG_HEUER/Product-1.png" alt="First Product">
+
                     <p>Omega Watch XxX</p>
                     <p>10$</p>
                     <div class="btn">
@@ -392,7 +238,9 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./assets/img/TAG_HEUER(copy)/Product-2.png" alt="Second Product">
+
+                    <img src="./assets/img/TAG_HEUER/Product-2.png" alt="Second Product">
+
                     <p>Omega Watch XxX</p>
                     <p>10$</p>
                     <div class="btn">
@@ -401,7 +249,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./assets/img/TAG_HEUER(copy)/Product-3.png" alt="Third Product">
+                    <img src="./assets/img/TAG_HEUER/Product-3.webp" alt="Third Product">
                     <p>Omega Watch XxX</p>
                     <p>10$</p>
                     <div class="btn">
@@ -410,7 +258,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./assets/img/TAG_HEUER(copy)/Product-3.png" alt="Fourth Product">
+                    <img src="./assets/img/TAG_HEUER/Product-4.webp" alt="Fourth Product">
                     <p>Omega Watch XxX</p>
                     <p>10$</p>
                     <div class="btn">
@@ -419,7 +267,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./assets/img/TAG_HEUER(copy)/Product-2.png" alt="Fifth Product">
+                    <img src="./assets/img/TAG_HEUER/Product-5.webp" alt="Fifth Product">
                     <p>Omega Watch XxX</p>
                     <p>10$</p>
                     <div class="btn">
@@ -428,7 +276,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./assets/img/TAG_HEUER(copy)/Product-2.png" alt="Sixth Product">
+                    <img src="./assets/img/TAG_HEUER/Product-6.webp" alt="Sixth Product">
                     <p>Omega Watch XxX</p>
                     <p>10$</p>
                     <div class="btn">
@@ -442,56 +290,20 @@
         <!-- PRODUCTS END -->
 
 
-        <style>
-            .slider {
-                padding-bottom: 20px
-            }
-            
-            .slider .splide .splide__track img {
-                border-radius: 25px;
-                cursor: pointer;
-            }
-            
-            .splide--draggable {
-                margin-top: 50px;
-            }
-            
-            .splide__pagination li {
-                padding: 5px;
-                border-radius: 5px;
-                margin-left: 1px;
-                background-color: #000000;
-            }
-            
-            .splide__pagination button {
-                background: rgba(255, 254, 255, 0.547);
-                border: 0;
-                border-radius: 50%;
-                display: inline-block;
-                height: 15px;
-                margin: 3px;
-                opacity: 1;
-                padding: 0;
-                transition: transform .2s linear;
-                width: 15px;
-            }
-            
-            .splide__pagination__page.is-active {
-                background: #ebeaeb;
-            }
-        </style>
 
         <section class="slider">
+            <h2 style="display:none">Text</h2>
+
             <div class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide" style="width: 300px"> <img src="./assets/img/TAG_HEUER/Slider-1.png" width="100%" alt=""></li>
-                        <li class="splide__slide" style="width: 300px"> <img src="./assets/img/TAG_HEUER/Slider-2.png" width="100%" alt=""></li>
-                        <li class="splide__slide" style="width: 300px"> <img src="./assets/img/TAG_HEUER/Slider-3.png" width="100%" alt=""></li>
-                        <li class="splide__slide" style="width: 300px"> <img src="./assets/img/TAG_HEUER/Slider-4.png" width="100%" alt=""></li>
-                        <li class="splide__slide" style="width: 300px"> <img src="./assets/img/TAG_HEUER/Slider-5.png" width="100%" alt=""></li>
-                        <li class="splide__slide" style="width: 300px"> <img src="./assets/img/TAG_HEUER/Slider-6.png" width="100%" alt=""></li>
-                        <li class="splide__slide" style="width: 300px"> <img src="./assets/img/TAG_HEUER/Slider-7.webp" width="100%" alt=""></li>
+                        <li class="splide__slide" style="width: 300px"> <img src="./assets/img/TAG_HEUER/Slider-1.png" style="width:100%" alt=""></li>
+                        <li class="splide__slide" style="width: 300px"> <img src="./assets/img/TAG_HEUER/Slider-2.png" style="width:100%" alt=""></li>
+                        <li class="splide__slide" style="width: 300px"> <img src="./assets/img/TAG_HEUER/Slider-3.png" style="width:100%" alt=""></li>
+                        <li class="splide__slide" style="width: 300px"> <img src="./assets/img/TAG_HEUER/Slider-4.png" style="width:100%" alt=""></li>
+                        <li class="splide__slide" style="width: 300px"> <img src="./assets/img/TAG_HEUER/Slider-5.png" style="width:100%" alt=""></li>
+                        <li class="splide__slide" style="width: 300px"> <img src="./assets/img/TAG_HEUER/Slider-6.png" style="width:100%" alt=""></li>
+                        <li class="splide__slide" style="width: 300px"> <img src="./assets/img/TAG_HEUER/Slider-7.png" style="width:100%" alt=""></li>
 
                     </ul>
                 </div>
@@ -505,7 +317,7 @@
         <br>
         <hr>
         <div class="footer-head">
-            <span>  <img src="./assets/img/TAG_HEUER/Tag_Heuer-logo.jpg" alt="Tag Heuer Logo" width="85" height="75" /></span>
+            <span>  <img src="./assets/img/TAG_HEUER/TagHeuer-logo.png" alt="Tag Heuer Logo" width="85" height="75" /></span>
             <span><i class="fas fa-arrow-right"></i></span>
             <span>Tag Heuer</span>
         </div>
@@ -514,58 +326,42 @@
 
         <div class="footer-menu">
             <ul>
-                <li>Text <span>+</span>
+                <li>Contact <span>+</span>
                     <ul>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
+                        <li>Call us</li>
+                        <li>Store Location</li>
+                        <li>Other contact routes</li>
+
+                    </ul>
+                </li>
+
+            </ul>
+            <ul>
+                <li>Jobs<span>+</span>
+
+                    <ul>
+                        <li>Work for us</li>
+                        <li>Available jobs</li>
+                        <li>Internship</li>
+
                     </ul>
                 </li>
 
             </ul>
 
             <ul>
-                <li>Text <span>+</span>
-
+                <li>About the site<span>+</span>
                     <ul>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                    </ul>
-                </li>
-
-            </ul>
-
-            <ul>
-                <li>Text <span>+</span>
-                    <ul>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
+                        <li>Accessibility</li>
+                        <li>Cookies</li>
+                        <li>Personal information</li>
                     </ul>
 
                 </li>
 
             </ul>
 
-            <ul>
-                <li>Text <span>+</span>
-                    <ul>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                        <li>Text</li>
-                    </ul>
-                </li>
 
-            </ul>
 
         </div>
 
